@@ -1,182 +1,166 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="it" class="h-full bg-slate-950 text-slate-100">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2299.77">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Scommesse Matematiche - Simulatore</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Blocco preventivo per evitare scroll laterali su schermi piccoli */
+        body {
+            overflow-x: hidden;
+            -webkit-tap-highlight-color: transparent;
+        }
+    </style>
 </head>
-<body>
-<p class="p1">&lt;!DOCTYPE html&gt;</p>
-<p class="p1">&lt;html lang="it" class="h-full bg-slate-950 text-slate-100"&gt;</p>
-<p class="p1">&lt;head&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;title&gt;Scommesse Matematiche - Simulatore&lt;/title&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;script src="https://cdn.tailwindcss.com"&gt;&lt;/script&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;style&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>/* Blocco preventivo per evitare scroll laterali su schermi piccoli */</p>
-<p class="p1"><span class="Apple-converted-space">        </span>body {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>overflow-x: hidden;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>-webkit-tap-highlight-color: transparent;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</p>
-<p class="p1">&lt;/head&gt;</p>
-<p class="p1">&lt;body class="flex flex-col min-h-full font-sans antialiased"&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;header class="border-b border-slate-800 bg-slate-900/50 backdrop-blur sticky top-0 z-50 px-4 py-3"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="max-w-md mx-auto flex items-center justify-between"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;h1 class="text-base font-bold tracking-tight text-emerald-400"&gt;MATH-BET SIMULATOR&lt;/h1&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;span class="text-xs bg-slate-800 text-slate-300 px-2.5 py-1 rounded-full font-mono border border-slate-700"&gt;v0.1&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/header&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;main class="flex-1 max-w-md w-full mx-auto px-4 py-6 space-y-6"&gt;</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="bg-slate-900 border border-slate-800 rounded-xl p-4 space-y-2"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;h2 class="text-sm font-semibold text-slate-300 uppercase tracking-wider"&gt;Caso Reale Analizzato&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;p class="text-xs text-slate-400 leading-relaxed"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>Analisi matematica basata sui dati storici reali della finale di Champions League (01/06/2024). Il bookmaker ha sottostimato la probabilità di vittoria del Real Madrid, offrendo una quota con valore atteso positivo.</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="bg-slate-900 border border-slate-800 rounded-xl p-4 space-y-4"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="flex justify-between items-center border-b border-slate-800 pb-3"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;span class="text-[10px] uppercase font-bold text-slate-500"&gt;Finale UCL 2024&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3 class="text-sm font-bold text-white"&gt;Dortmund vs Real Madrid&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;span class="text-xs font-bold text-emerald-500 bg-emerald-500/10 px-2 py-1 rounded border border-emerald-500/20"&gt;VALUE BET (+4.77%)&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="grid grid-cols-2 gap-3 text-xs"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="bg-slate-950 p-2.5 rounded border border-slate-800"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;span class="text-slate-500 block mb-0.5"&gt;Quota Bookmaker (Q)&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;span class="font-mono text-sm font-bold text-white"&gt;1.65&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="bg-slate-950 p-2.5 rounded border border-slate-800"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;span class="text-slate-500 block mb-0.5"&gt;Probabilità Reale (P)&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;span class="font-mono text-sm font-bold text-white"&gt;63.50%&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="bg-slate-950 p-2.5 rounded border border-slate-800"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;span class="text-slate-500 block mb-0.5"&gt;Quota Equa (Fair)&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;span class="font-mono text-sm font-bold text-slate-300"&gt;1.57&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="bg-slate-950 p-2.5 rounded border border-slate-800"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;span class="text-slate-500 block mb-0.5"&gt;Risultato Finale Reale&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;span class="font-bold text-emerald-400"&gt;0 - 2 (Vittoria Real)&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="bg-slate-900 border border-slate-800 rounded-xl p-4 space-y-4"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;h3 class="text-sm font-bold text-white"&gt;Gestione Capitale (Criterio di Kelly)&lt;/h3&gt;</p>
-<p class="p2"><span class="Apple-converted-space">            </span></p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="space-y-2"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;label for="bankroll" class="text-xs text-slate-400 block"&gt;Inserisci il tuo Budget Totale (€):&lt;/label&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;input type="number" id="bankroll" value="1000" class="w-full bg-slate-950 border border-slate-800 rounded-lg px-3 py-2 text-sm font-mono text-white focus:outline-none focus:border-emerald-500" placeholder="Esempio: 1000"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="bg-slate-950 p-3 rounded-lg border border-slate-800 space-y-2"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="flex justify-between items-center text-xs"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;span class="text-slate-400"&gt;Puntata consigliata (% budget):&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;span id="kelly-percentage" class="font-mono font-bold text-emerald-400"&gt;7.34%&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="flex justify-between items-center text-xs border-t border-slate-900 pt-2"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;span class="text-slate-400"&gt;Importo da scommettere:&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;span id="kelly-stake" class="font-mono font-bold text-white"&gt;73.46 €&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;button onclick="simulaRisultato()" class="w-full bg-emerald-600 hover:bg-emerald-500 active:bg-emerald-700 text-white text-xs font-bold py-3 px-4 rounded-lg transition duration-200"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>Simula Esito Partita Reale (Vittoria Real)</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div id="result-box" class="hidden bg-slate-900 border border-slate-800 rounded-xl p-4 space-y-3"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;h3 class="text-sm font-bold text-white"&gt;Resoconto Operazione&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="text-xs space-y-2"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="flex justify-between"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;span class="text-slate-400 font-medium"&gt;Esito:&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;span class="text-emerald-400 font-bold"&gt;SCOMMESSA VINTA&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="flex justify-between"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;span class="text-slate-400 font-medium"&gt;Ricavo Lordo:&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;span id="gross-return" class="font-mono font-bold text-white"&gt;0.00 €&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="flex justify-between"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;span class="text-slate-400 font-medium"&gt;Profitto Netto:&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;span id="net-profit" class="font-mono font-bold text-emerald-400"&gt;+0.00 €&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="flex justify-between border-t border-slate-800 pt-2"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;span class="text-slate-400 font-medium"&gt;Nuovo Budget Totale:&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;span id="new-bankroll" class="font-mono font-bold text-white"&gt;0.00 €&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/main&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;footer class="border-t border-slate-900 bg-slate-950 py-4 px-4 text-center"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;span class="text-[10px] text-slate-600 block"&gt;Progetto di Simulazione Matematica - 100% Gratuito&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/footer&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;script&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>const odds = 1.65;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>const probability = 0.635; // 63.5%</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>// Criterio di Kelly frazionario (usiamo Kelly 1/1 per scopi didattici)</p>
-<p class="p1"><span class="Apple-converted-space">        </span>// Formula: f* = (p * q - 1) / (q - 1)</p>
-<p class="p1"><span class="Apple-converted-space">        </span>const kellyFraction = ((probability * odds) - 1) / (odds - 1); // 0.07346 (7.346%)</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>const bankrollInput = document.getElementById('bankroll');</p>
-<p class="p1"><span class="Apple-converted-space">        </span>const kellyPercentSpan = document.getElementById('kelly-percentage');</p>
-<p class="p1"><span class="Apple-converted-space">        </span>const kellyStakeSpan = document.getElementById('kelly-stake');</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>const resultBox = document.getElementById('result-box');</p>
-<p class="p1"><span class="Apple-converted-space">        </span>const grossReturnSpan = document.getElementById('gross-return');</p>
-<p class="p1"><span class="Apple-converted-space">        </span>const netProfitSpan = document.getElementById('net-profit');</p>
-<p class="p1"><span class="Apple-converted-space">        </span>const newBankrollSpan = document.getElementById('new-bankroll');</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>function calcolaPuntata() {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>let bankroll = parseFloat(bankrollInput.value) || 0;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>if (bankroll &lt; 0) bankroll = 0;</p>
-<p class="p2"><span class="Apple-converted-space">            </span></p>
-<p class="p1"><span class="Apple-converted-space">            </span>const stake = bankroll * kellyFraction;</p>
-<p class="p2"><span class="Apple-converted-space">            </span></p>
-<p class="p1"><span class="Apple-converted-space">            </span>kellyPercentSpan.innerText = (kellyFraction * 100).toFixed(2) + "%";</p>
-<p class="p1"><span class="Apple-converted-space">            </span>kellyStakeSpan.innerText = stake.toFixed(2) + " €";</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>function simulaRisultato() {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>let bankroll = parseFloat(bankrollInput.value) || 0;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>if (bankroll &lt;= 0) return;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">            </span>const stake = bankroll * kellyFraction;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>const profit = stake * (odds - 1);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>const totalReturn = stake * odds;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>const finalBankroll = bankroll + profit;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">            </span>grossReturnSpan.innerText = totalReturn.toFixed(2) + " €";</p>
-<p class="p1"><span class="Apple-converted-space">            </span>netProfitSpan.innerText = "+" + profit.toFixed(2) + " €";</p>
-<p class="p1"><span class="Apple-converted-space">            </span>newBankrollSpan.innerText = finalBankroll.toFixed(2) + " €";</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">            </span>resultBox.classList.remove('hidden');</p>
-<p class="p1"><span class="Apple-converted-space">            </span>resultBox.scrollIntoView({ behavior: 'smooth' });</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>// Ascolta l'inserimento dell'utente per aggiornare la scommessa in tempo reale</p>
-<p class="p1"><span class="Apple-converted-space">        </span>bankrollInput.addEventListener('input', calcolaPuntata);</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>// Esegui calcolo iniziale</p>
-<p class="p1"><span class="Apple-converted-space">        </span>calcolaPuntata();</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</p>
-<p class="p1">&lt;/body&gt;</p>
-<p class="p1">&lt;/html&gt;</p>
+<body class="flex flex-col min-h-full font-sans antialiased">
+
+    <header class="border-b border-slate-800 bg-slate-900/50 backdrop-blur sticky top-0 z-50 px-4 py-3">
+        <div class="max-w-md mx-auto flex items-center justify-between">
+            <h1 class="text-base font-bold tracking-tight text-emerald-400">MATH-BET SIMULATOR</h1>
+            <span class="text-xs bg-slate-800 text-slate-300 px-2.5 py-1 rounded-full font-mono border border-slate-700">v0.1</span>
+        </div>
+    </header>
+
+    <main class="flex-1 max-w-md w-full mx-auto px-4 py-6 space-y-6">
+        
+        <div class="bg-slate-900 border border-slate-800 rounded-xl p-4 space-y-2">
+            <h2 class="text-sm font-semibold text-slate-300 uppercase tracking-wider">Caso Reale Analizzato</h2>
+            <p class="text-xs text-slate-400 leading-relaxed">
+                Analisi matematica basata sui dati storici reali della finale di Champions League (01/06/2024). Il bookmaker ha sottostimato la probabilità di vittoria del Real Madrid, offrendo una quota con valore atteso positivo.
+            </p>
+        </div>
+
+        <div class="bg-slate-900 border border-slate-800 rounded-xl p-4 space-y-4">
+            <div class="flex justify-between items-center border-b border-slate-800 pb-3">
+                <div>
+                    <span class="text-[10px] uppercase font-bold text-slate-500">Finale UCL 2024</span>
+                    <h3 class="text-sm font-bold text-white">Dortmund vs Real Madrid</h3>
+                </div>
+                <span class="text-xs font-bold text-emerald-500 bg-emerald-500/10 px-2 py-1 rounded border border-emerald-500/20">VALUE BET (+4.77%)</span>
+            </div>
+
+            <div class="grid grid-cols-2 gap-3 text-xs">
+                <div class="bg-slate-950 p-2.5 rounded border border-slate-800">
+                    <span class="text-slate-500 block mb-0.5">Quota Bookmaker (Q)</span>
+                    <span class="font-mono text-sm font-bold text-white">1.65</span>
+                </div>
+                <div class="bg-slate-950 p-2.5 rounded border border-slate-800">
+                    <span class="text-slate-500 block mb-0.5">Probabilità Reale (P)</span>
+                    <span class="font-mono text-sm font-bold text-white">63.50%</span>
+                </div>
+                <div class="bg-slate-950 p-2.5 rounded border border-slate-800">
+                    <span class="text-slate-500 block mb-0.5">Quota Equa (Fair)</span>
+                    <span class="font-mono text-sm font-bold text-slate-300">1.57</span>
+                </div>
+                <div class="bg-slate-950 p-2.5 rounded border border-slate-800">
+                    <span class="text-slate-500 block mb-0.5">Risultato Finale Reale</span>
+                    <span class="font-bold text-emerald-400">0 - 2 (Vittoria Real)</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-slate-900 border border-slate-800 rounded-xl p-4 space-y-4">
+            <h3 class="text-sm font-bold text-white">Gestione Capitale (Criterio di Kelly)</h3>
+            
+            <div class="space-y-2">
+                <label for="bankroll" class="text-xs text-slate-400 block">Inserisci il tuo Budget Totale (€):</label>
+                <input type="number" id="bankroll" value="1000" class="w-full bg-slate-950 border border-slate-800 rounded-lg px-3 py-2 text-sm font-mono text-white focus:outline-none focus:border-emerald-500" placeholder="Esempio: 1000">
+            </div>
+
+            <div class="bg-slate-950 p-3 rounded-lg border border-slate-800 space-y-2">
+                <div class="flex justify-between items-center text-xs">
+                    <span class="text-slate-400">Puntata consigliata (% budget):</span>
+                    <span id="kelly-percentage" class="font-mono font-bold text-emerald-400">7.34%</span>
+                </div>
+                <div class="flex justify-between items-center text-xs border-t border-slate-900 pt-2">
+                    <span class="text-slate-400">Importo da scommettere:</span>
+                    <span id="kelly-stake" class="font-mono font-bold text-white">73.46 €</span>
+                </div>
+            </div>
+
+            <button onclick="simulaRisultato()" class="w-full bg-emerald-600 hover:bg-emerald-500 active:bg-emerald-700 text-white text-xs font-bold py-3 px-4 rounded-lg transition duration-200">
+                Simula Esito Partita Reale (Vittoria Real)
+            </button>
+        </div>
+
+        <div id="result-box" class="hidden bg-slate-900 border border-slate-800 rounded-xl p-4 space-y-3">
+            <h3 class="text-sm font-bold text-white">Resoconto Operazione</h3>
+            <div class="text-xs space-y-2">
+                <div class="flex justify-between">
+                    <span class="text-slate-400 font-medium">Esito:</span>
+                    <span class="text-emerald-400 font-bold">SCOMMESSA VINTA</span>
+                </div>
+                <div class="flex justify-between">
+                    <span class="text-slate-400 font-medium">Ricavo Lordo:</span>
+                    <span id="gross-return" class="font-mono font-bold text-white">0.00 €</span>
+                </div>
+                <div class="flex justify-between">
+                    <span class="text-slate-400 font-medium">Profitto Netto:</span>
+                    <span id="net-profit" class="font-mono font-bold text-emerald-400">+0.00 €</span>
+                </div>
+                <div class="flex justify-between border-t border-slate-800 pt-2">
+                    <span class="text-slate-400 font-medium">Nuovo Budget Totale:</span>
+                    <span id="new-bankroll" class="font-mono font-bold text-white">0.00 €</span>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="border-t border-slate-900 bg-slate-950 py-4 px-4 text-center">
+        <span class="text-[10px] text-slate-600 block">Progetto di Simulazione Matematica - 100% Gratuito</span>
+    </footer>
+
+    <script>
+        const odds = 1.65;
+        const probability = 0.635; // 63.5%
+        
+        // Criterio di Kelly frazionario (usiamo Kelly 1/1 per scopi didattici)
+        // Formula: f* = (p * q - 1) / (q - 1)
+        const kellyFraction = ((probability * odds) - 1) / (odds - 1); // 0.07346 (7.346%)
+
+        const bankrollInput = document.getElementById('bankroll');
+        const kellyPercentSpan = document.getElementById('kelly-percentage');
+        const kellyStakeSpan = document.getElementById('kelly-stake');
+        
+        const resultBox = document.getElementById('result-box');
+        const grossReturnSpan = document.getElementById('gross-return');
+        const netProfitSpan = document.getElementById('net-profit');
+        const newBankrollSpan = document.getElementById('new-bankroll');
+
+        function calcolaPuntata() {
+            let bankroll = parseFloat(bankrollInput.value) || 0;
+            if (bankroll < 0) bankroll = 0;
+            
+            const stake = bankroll * kellyFraction;
+            
+            kellyPercentSpan.innerText = (kellyFraction * 100).toFixed(2) + "%";
+            kellyStakeSpan.innerText = stake.toFixed(2) + " €";
+        }
+
+        function simulaRisultato() {
+            let bankroll = parseFloat(bankrollInput.value) || 0;
+            if (bankroll <= 0) return;
+
+            const stake = bankroll * kellyFraction;
+            const profit = stake * (odds - 1);
+            const totalReturn = stake * odds;
+            const finalBankroll = bankroll + profit;
+
+            grossReturnSpan.innerText = totalReturn.toFixed(2) + " €";
+            netProfitSpan.innerText = "+" + profit.toFixed(2) + " €";
+            newBankrollSpan.innerText = finalBankroll.toFixed(2) + " €";
+
+            resultBox.classList.remove('hidden');
+            resultBox.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Ascolta l'inserimento dell'utente per aggiornare la scommessa in tempo reale
+        bankrollInput.addEventListener('input', calcolaPuntata);
+        
+        // Esegui calcolo iniziale
+        calcolaPuntata();
+    </script>
 </body>
 </html>
